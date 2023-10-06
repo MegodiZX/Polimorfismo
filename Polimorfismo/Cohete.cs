@@ -28,12 +28,23 @@ namespace Polimorfismo
         #endregion
 
         #region Métodos
-        public void Avanzar()
+        public override void Avanzar()
         {
-            base.Avanzar();
             Console.WriteLine("El auto avanza a {0}", this._velocidadMaxima);
         }
-  
+
+        public override void Frenar()
+        {
+            Console.WriteLine("El cohete disminuye la fuerza de los propulsores");
+        }
+
+        public override string TiempoUso
+        {
+            get
+            {
+                return "Desde 1961 hasta el infinito y mas alla";
+            }
+        }
 
         #endregion
 
@@ -44,8 +55,6 @@ namespace Polimorfismo
             System.Text.StringBuilder sb = new StringBuilder();
 
           
-          
-
             sb.AppendLine("En la clase Cohete...");
 
             sb.Append("Cantidad de ventanas: ");

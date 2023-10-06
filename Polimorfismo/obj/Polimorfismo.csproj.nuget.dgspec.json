@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\German PC\\Desktop\\C#\\C2\\C_SHARP_Practicas\\Material para clase\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj": {}
+    "C:\\Users\\maxim\\Source\\Repos\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\German PC\\Desktop\\C#\\C2\\C_SHARP_Practicas\\Material para clase\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj": {
+    "C:\\Users\\maxim\\Source\\Repos\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\German PC\\Desktop\\C#\\C2\\C_SHARP_Practicas\\Material para clase\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj",
+        "projectUniqueName": "C:\\Users\\maxim\\Source\\Repos\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj",
         "projectName": "Polimorfismo",
-        "projectPath": "C:\\Users\\German PC\\Desktop\\C#\\C2\\C_SHARP_Practicas\\Material para clase\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj",
-        "packagesPath": "C:\\Users\\German PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\German PC\\Desktop\\C#\\C2\\C_SHARP_Practicas\\Material para clase\\Polimorfismo\\Polimorfismo\\obj\\",
+        "projectPath": "C:\\Users\\maxim\\Source\\Repos\\Polimorfismo\\Polimorfismo\\Polimorfismo.csproj",
+        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maxim\\Source\\Repos\\Polimorfismo\\Polimorfismo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\German PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

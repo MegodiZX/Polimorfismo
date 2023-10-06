@@ -17,6 +17,13 @@ namespace Polimorfismo
 
         #region Propiedades
 
+        public override string TiempoUso
+        {
+            get
+            {
+                return "Se usa desde el siglo XIX (1886)";
+            }
+        }
 
         #endregion
 
@@ -30,13 +37,14 @@ namespace Polimorfismo
         #endregion
 
         #region Métodos
-        public void Avanzar()
+        public override void Avanzar()// se considera virtual y el hijo puede sobreescribir el metodo
         {
-            base.Avanzar();
+            base.Avanzar();//base es la clase padre
+            //sin la base se sobreescribe completamente
             Console.WriteLine("El auto avanza a {0}", this._velocidadMaxima);
         }
 
-        public  void Frenar()
+        public override void Frenar()
         {
             Console.WriteLine("reduzco velocidad pisando el freno...");
         }
@@ -45,12 +53,12 @@ namespace Polimorfismo
 
     
 
-        public string mostrar()
+        public override string ToString()
         {
             System.Text.StringBuilder sb = new StringBuilder();
 
             //INVOCO AL TOSTRING() DE LA CLASE BASE
-            sb.AppendLine(base.Mostrar());
+            sb.AppendLine(base.ToString());//especializamos
 
             sb.AppendLine("En la clase Auto...");
             sb.Append("Cantidad de ruedas: ");
@@ -59,6 +67,10 @@ namespace Polimorfismo
             return sb.ToString();
         }
 
+        public void TocarBocina()
+        {
+            Console.WriteLine("PIIIIPIPIIII");
+        }
  
     }
 }

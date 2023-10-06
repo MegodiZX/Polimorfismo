@@ -15,6 +15,11 @@ namespace Polimorfismo
 
         #endregion
 
+        public abstract string TiempoUso
+        {
+            get;
+        }
+
 
 
         #region Constructor
@@ -28,21 +33,22 @@ namespace Polimorfismo
         #endregion
 
         #region Métodos 
-        public void Avanzar()
+        public virtual void Avanzar()
         {
             Console.WriteLine("Estoy avanzando");
         }
 
+        public abstract void Frenar();
+        //un metodo abstracto implica que no tiene utilizacion. Tiene que estar si o si en una clase abstracta
 
-        
+
+
 
         #endregion
 
         #region Polimorfismo ToString
 
-        //SOBRESCRIBO EL MÉTODO TOSTRING(), 
-        //HEREDADO DE OBJECT
-        public string Mostrar()
+        public override string ToString()
         {
             System.Text.StringBuilder sb = new StringBuilder();
 
@@ -54,6 +60,7 @@ namespace Polimorfismo
 
             return sb.ToString();
         }
+
 
         #endregion
     }

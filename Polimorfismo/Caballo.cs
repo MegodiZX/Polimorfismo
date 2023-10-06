@@ -15,7 +15,7 @@ namespace Polimorfismo
 
         #endregion
 
-        #region Propiedades
+        //#region Propiedades
 
         
 
@@ -29,23 +29,33 @@ namespace Polimorfismo
 
         #endregion
 
-        #region Métodos
-        public  void Avanzar()
+        //#region Métodos
+        public override void Avanzar()
         {
             base.Avanzar();
             Console.WriteLine("El auto avanza a {0}", this._velocidadMaxima);
         }
 
-        
+        public override void Frenar()
+        {
+            Console.WriteLine("Tire de las riendas, el caballo redujo el galope");
+        }
 
 
+        public override string TiempoUso
+        {
+            get
+            {
+                return "Se usa desde tiempos antiguos";
+            }
+        }
 
         public override string ToString()
         {
             System.Text.StringBuilder sb = new StringBuilder();
 
             //INVOCO AL TOSTRING() DE LA CLASE BASE
-            sb.AppendLine(base.Mostrar());
+            sb.AppendLine(base.ToString());
 
             sb.AppendLine("En la clase Caballo...");
             sb.Append("Raza: ");
